@@ -15,11 +15,12 @@ export class LoginComponent {
   submitLogin() {
     // Login with Facebook
     this.userService.userLogin();
+    // this.userService.testAuth();
   }
 
   logout() {
     // Logout
-    this.fb.logout();
+    this.fb.getLoginStatus();
   }
 
 }
